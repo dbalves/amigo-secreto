@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".SobreNatal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/natal" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="O Natal teve origem em festas pagãs que eram realizadas na antiguidade. Nessa data, os romanos celebravam a chegada do inverno (solstício de inverno). Eles cultuavam o Deus Sol (natalis invicti Solis), e ainda realizavam dias de festividades com o intuito de renovação.  Outros povos da antiguidade também celebravam a data, seja pela chegada do inverno ou pela passagem do tempo.  É o caso dos mesopotâmicos, que celebravam o “Zagmuk”, uma festa pagã em que um homem era escolhido para ser sacrificado. Isso porque eles acreditavam que no final do ano alguns monstros despertavam.  A partir do século IV, e com a consolidação do Cristianismo, a festividade foi oficializada como Natale Domini (Natal do Senhor). Como não se sabe ao certo o dia em que Jesus nasceu, essa foi uma forma de cristianizar as festas pagãs romanas, dando-lhes uma nova simbologia."
+                android:textColor="@color/christmas_dark_green"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:backgroundTintMode="add"
+        android:fontFamily="sans-serif-light"
+        android:stateListAnimator="@android:anim/overshoot_interpolator"
+        android:text="Voltar"
+        android:textColor="@color/christmas_green"
+        android:textSize="16sp"
+        app:icon="@drawable/ic_baseline_card_giftcard_24"
+        app:iconTint="@color/christmas_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
